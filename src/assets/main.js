@@ -16,6 +16,14 @@ $(function () {
       $div = $('<div />', {
         'class': 'course'
       }).appendTo($badges);
+
+      $('<h3 />', {
+        text: course.title
+      }).appendTo($div);
+
+      $('<img />', {
+        src: course.badge
+      }).appendTo($div);
     });
   }
 });
